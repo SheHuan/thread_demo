@@ -5,7 +5,7 @@ package com.sn.thread.future;
  * FutureTask 具体要执行的任务
  * FutureService 桥接Future和FutureTask
  */
-public class Test {
+public class FutureTest {
     public static void main(String[] args) {
         FutureService futureService = new FutureService();
 //        Future<String> future = futureService.submit(() -> {
@@ -25,7 +25,7 @@ public class Test {
                 e.printStackTrace();
             }
             return "finish";
-        }, Test::getResult);
+        }, FutureTest::getResult);
 
         System.out.println("---------------------------");
         System.out.println("do other thing");
