@@ -79,4 +79,10 @@ public class Test {
         });
         t.start();
     }
+
+    //静态语句块中只能访问到定义在静态语句块之前的变量，定义在他之后的变量，只能赋值，不能访问
+//    static {
+//        System.out.println(s);
+//    }
+//    static int s =100;
 }
